@@ -1,4 +1,5 @@
 import numpy as np
+import random 
 print("......Array....")
 print("\n")
 A=np.array([1,2,4,3,2,9])
@@ -8,8 +9,8 @@ print("\n")
 print("matrix =",B)
 print("\ntype of matrix",type(B))
 print("\n matrix=",B)
-
 print("\n .........dimension........")
+
 print("dimension of matrix A is",A.ndim)
 print("dimension of matrix A is",B.ndim)
 
@@ -19,9 +20,6 @@ print("shape(B):",B.shape)
 print("\n............ arrange...........")
 A=np.arange(1,10)
 print("A",A)
-
-# print("\nInverse Matrix:")
-# print(A)
 
 print("\n......basic arithmetic operation....")
 matrix1=np.array([[3,3],[3,2]])
@@ -33,17 +31,14 @@ print(matrix2)
 a=np.add(matrix1,matrix2)
 print("\nmatrix addition")
 print(a)
-#matrix multiplication
 a=np.multiply(matrix1,matrix2)
 print("\nmatrix multiplication")
 print(a)
-#matrix substraction
 a=np.subtract(matrix1,matrix2)
 print("\nmatrix substraction")
 print(a)
-print("\n...........matrix dot and Transpose..........")
 
-#Transpose the matrix
+print("\n...........matrix dot and Transpose..........")
 matrix1=np.array([[2,3],[5,6]])
 matrix2=np.array([[7,3],[2,9]])
 print("\n matrix1:")
@@ -57,7 +52,6 @@ a=np.transpose(matrix2)
 print("\nmatrix transpose")
 print(a)
 
-#determinant and inverse
 print("\n ..........determinant.................")
 matrix=np.array([[[2,4,5],[6,7,2],[5,3,5]]])
 print("matrix",matrix)
@@ -86,5 +80,30 @@ print(x)
 w=x.reshape(5,3)
 print("after reshaoing",w)
 
-print("\n ...............reshaping..........")
+print("\n ...............search and sort.........")
+x=np.array([1,3,2,4,6,8,7,9,5])
+print(x)
+r=np.where(x==7)
+print("position of 3")
+print(r)
+
+print("\n ...............identity .........")
+x=np.identity(3,dtype=int)
+print("identity matrix")
+print(x)
+y=np.ones([2,2],dtype=int)
+print("ones")
+print(y)
+y=np.zeros([2,2],dtype=int)
+print("zeros")
+print(y)
+
+print("\n ...............Random.........")
+x = np.random.randint(100, size=(5))
+print(x)
+x=np.random.randint(100)
+print(x)
+x=np.random.rand(7)
+print(x)
+x=np.random.randint(0,100.6)
 
