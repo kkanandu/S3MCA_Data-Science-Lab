@@ -57,6 +57,15 @@ a=np.transpose(matrix2)
 print("\nmatrix transpose")
 print(a)
 
+#determinant and inverse
+print("\n ..........determinant.................")
+matrix=np.array([[[2,4,5],[6,7,2],[5,3,5]]])
+print("matrix",matrix)
+det=np.linalg.det(matrix)
+print("\n",det)
+inv=np.linalg.inv(matrix)
+print("\n",inv)
+
 
 
 
