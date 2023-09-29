@@ -1,0 +1,23 @@
+x = int(input("Enter the first number:"))
+y = int(input("Enter the second number:"))
+
+print("1. Addition")
+print("2. Subtraction")
+print("3. Division")
+print("4. Multiplication")
+print("5. Exit")
+while True:
+    choice = input("Enter your choice: ")
+    if choice == '1':
+      print("sum is",x+y)
+    elif choice =='2':
+      print("substration is",x-y)
+    elif choice =='3':
+      print("division is",x/y)
+    elif choice =='4':
+      print("multiplication is",x*y)
+    elif choice =='5':
+      print("Exit")
+      break
+    else:
+      print("invalid choice")
