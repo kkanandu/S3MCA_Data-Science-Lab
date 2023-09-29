@@ -1,5 +1,4 @@
 import numpy as np
-import random 
 print("......Array....")
 print("\n")
 A=np.array([1,2,4,3,2,9])
