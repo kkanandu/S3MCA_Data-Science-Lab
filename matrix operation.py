@@ -1,14 +1,31 @@
 import numpy as np
-matrix = np.array([[1, 2], [3, 4]])
-a = np.linalg.inv(matrix)
-print("Original Matrix:")
-print(matrix)
-print("\nInverse Matrix:")
-print(a)
+print("......Array....")
+print("\n")
+A=np.array([1,2,4,3,2,9])
+print("Array=",A)
+B= np.array([[5, 8], [3, 1]])
+print("\n")
+print("matrix =",B)
+print("\ntype of matrix",type(B))
+print("\n matrix=",B)
 
-#matrix addition
-matrix1=np.array([[[2,3,4],[5,7,2],[7,4,3]]])
-matrix2=np.array([[[1,7,2],[6,2,9],[3,4,8]]])
+print("\n .........dimension........")
+print("dimension of matrix A is",A.ndim)
+print("dimension of matrix A is",B.ndim)
+
+print("shape(A):",A.shape)
+print("shape(B):",B.shape)
+
+print("\n............ arrange...........")
+A=np.arange(1,10)
+print("A",A)
+
+# print("\nInverse Matrix:")
+# print(A)
+
+print("\n......basic arithmetic operation....")
+matrix1=np.array([[3,3],[3,2]])
+matrix2=np.array([[9,6],[6,8]])
 print("\n matrix1:")
 print(matrix1)
 print("\n matrix2:")
@@ -22,16 +39,25 @@ print("\nmatrix multiplication")
 print(a)
 #matrix substraction
 a=np.subtract(matrix1,matrix2)
-print("\nmatrix multiplication")
+print("\nmatrix substraction")
 print(a)
-#matrix dot product
+print("\n...........matrix dot and Transpose..........")
+
+#Transpose the matrix
+matrix1=np.array([[2,3],[5,6]])
+matrix2=np.array([[7,3],[2,9]])
+print("\n matrix1:")
+print(matrix1)
+print("\n matrix2:")
+print(matrix2)
 a=np.dot(matrix1,matrix2)
 print("\nmatrix dot product")
 print(a)
-#Transpose the matrix
-matrix=np.array([[2,3],[5,6]])
-print("matrix")
-print(matrix)
-a=np.transpose(matrix)
-print("matrix transpose")
+a=np.transpose(matrix2)
+print("\nmatrix transpose")
 print(a)
+
+
+
+
+
