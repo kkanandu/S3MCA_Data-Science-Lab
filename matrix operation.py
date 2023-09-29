@@ -66,7 +66,25 @@ print("\n",det)
 inv=np.linalg.inv(matrix)
 print("\n",inv)
 
+print("\n ...............indexing..........")
+x=np.arange(3,10)
+print(x)
+print(x[5])
+print(x[3]+x[5])
+print(x[-1])
 
+print("\n ...............slicing..........")
+x=np.arange(3,10)
+print(x)
+print(x[4:5])
+print(x[:4])
+print(x[4:])
 
+print("\n ...............reshaping..........")
+x=np.arange(1,16)
+print(x)
+w=x.reshape(5,3)
+print("after reshaoing",w)
 
+print("\n ...............reshaping..........")
 
