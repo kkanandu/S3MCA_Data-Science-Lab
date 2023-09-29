@@ -1,0 +1,11 @@
+import numpy as np
+print("....SvD......")
+a=np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(a)
+U,D,VT=np.linalg.svd(a)
+print("u:",U)
+print("D:",D)
+print("VT:",VT)
+print('\n......remake.....')
+a=(U@np.diag(D)@VT)
+print(a)
