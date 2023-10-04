@@ -13,11 +13,17 @@ b=ndimage.rotate(img,200)
 plt.title("Rotated Image")
 plt.imshow(b)
 
-# d=(img.size[0] // 2,img.size[1] // 2)
-# c=img.resize(d)
-# plt.title("zoom Image")
-# plt.imshow(c)
+c=ndimage.gaussian_filter(a,sigma=2)
+plt.imshow(c)
+plt.title("blurred Image")
+
 
 d=ndimage.zoom(a,(.3))
 plt.imshow(d)
 plt.title("zoom Image")
+
+
+# d=(img.size[0] // 2,img.size[1] // 2)
+# c=img.resize(d)
+# plt.title("zoom Image")
+# plt.imshow(c)
