@@ -17,8 +17,7 @@ c=ndimage.gaussian_filter(a,sigma=2)
 plt.imshow(c)
 plt.title("blurred Image")
 
-
-d=ndimage.zoom(a,(.3))
+d=ndimage.zoom(a,(.5,.2,1))
 plt.imshow(d)
 plt.title("zoom Image")
 
